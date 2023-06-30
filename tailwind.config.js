@@ -13,9 +13,6 @@ module.exports = {
       fontFamily : {
         Ubuntu : ['Ubuntu', 'sans-serif'],
         Bebas : ['Bebas Neue', 'sans-serif']
-      },
-      screens : {
-        'desktop' : '425px'
       }
     },
   },
