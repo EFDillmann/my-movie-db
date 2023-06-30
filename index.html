@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body class="bg-myDark font-Ubuntu text-white">
-    <header class="h-20 border-b border-gray-800">
-        <nav class="h-full flex justify-evenly items-center">
+    <header class="">
+        <nav class="h-14 flex justify-evenly items-center border-b border-gray-800">
             <img class="md:hidden" src="./assets/svg/toggle-icon.svg" alt="toggle menu">
-            <h1 class="text-4xl font-Bebas font-medium text-myRed leading-8 tracking-wide md:my-2 md:ml-2">MY MOVIES DB</h1>
+            <h1 class="min-w-[180px] text-4xl font-Bebas font-medium text-myRed leading-8 tracking-wide md:mt-2 md:ml-2">MY MOVIES DB</h1>
             <img class="h-6 w-6 md:hidden" src="./assets/svg/search-icon.svg" alt="search icon">
-            <ul class="hidden md:max-w-[578px] md:flex md:justify-center md:flex-row md:flex-wrap md:gap-8 md:font-normal md:text-lg md:leading-5">
+            <ul class="hidden md:max-w-[578px] md:flex md:justify-center md:flex-row md:flex-wrap md:space-x-8 md:font-normal md:text-lg md:leading-5">
                 <li>Home</li>
                 <li>Trending Movies</li>
                 <li>Categories</li>
@@ -31,6 +31,36 @@
                 <button class="h-5 w-5"><img src="./assets/svg/search-icon.svg" alt=""></button>
             </div>
         </nav>
+        <section id="hero">
+            <article id="movie-description">
+                <div id="mini" class="h-[320px] w-full bg-hero bg-cover bg-right-top bg-no-repeat 480px:h-screen 480px:absolute 480px:top-0 480px:z-[-1] md:bg-center">
+                    <div id="content" class="flex flex-col items-center max-h-36 relative top-72 text-center 480px:top-2/3 md:max-h-[354px] md:max-w-[640px] md:items-start md:gap-2 md:text-left md:left-20">
+                        <small class="max-w-[400px] w-full font-normal text-lg flex justify-evenly items-center md:justify-start md:space-x-2">
+                            <div class="flex items-center gap-2">
+                                <span class="h-6 w-6 inline-block bg-star bg-cover bg-center"></span>
+                                <span>7.5</span>
+                            </div>
+                            <span>
+                                &#x2022; 
+                            </span>
+                            <span>
+                                1h 55m
+                            </span>
+                            <span>
+                                &#x2022; 
+                            </span>
+                            <div id="tag" class="inline-block p-1 mx-1 bg-myRed rounded-lg font-medium text-sm">TRENDING</div>
+                        </small>
+                        <h2 class="max-w-lg font-bold text-2xl">Doctor Strange in the Multiverse of Madness</h2>
+                        <p class="hidden md:block max-w-[640px] font-light text-lg leading-7">Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                        <div id="btns" class="flex justify-center gap-4 mt-2 md:justify-start">
+                            <button class="h-11 w-44 bg-myRed rounded-lg flex justify-center items-center gap-2"><span class="h-4 w-4 inline-block bg-play bg-cover bg-center"></span> PLAY TRAILER</button>
+                            <button class="h-11 w-12 bg-myGrey rounded-lg flex justify-center items-center md:w-32 md:gap-2"><span class="h-4 w-4 inline-block bg-info bg-cover bg-center"></span><span class="hidden md:inline-block">DETAILS</span></button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
     </header>
 
     <script src="./src/scripts/keys.js"></script>
