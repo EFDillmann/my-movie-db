@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie DB</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/styles/output.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-myDark font-Ubuntu text-white">
+    <header class="h-20 border-b border-gray-800">
+        <nav class="h-full flex justify-evenly items-center">
+            <img class="desktop:hidden" src="./assets/svg/toggle-icon.svg" alt="toggle menu">
+            <h1 class="text-4xl font-Bebas font-medium text-myRed leading-8 tracking-wide">MY MOVIES DB</h1>
+            <img class="h-6 w-6 desktop:hidden" src="./assets/svg/search-icon.svg" alt="search icon">
+            <ul class="hidden desktop:block">
+                <li>Home</li>
+                <li>Trending Movies</li>
+                <li>Categories</li>
+                <li>Popular</li>
+                <li>Upcoming</li>
+            </ul>
+            <div id="search" class="hidden desktop:block">
+                <textarea name="" id="" cols="30" rows="1" placeholder="Search"></textarea>
+                <button><img src="./assets/svg/search-icon.svg" alt=""></button>
+            </div>
+        </nav>
+    </header>
+
+    <script src="./src/scripts/keys.js"></script>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>

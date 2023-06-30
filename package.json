@@ -1,0 +1,22 @@
+{
+  "name": "my-movie-db",
+  "version": "1.0.0",
+  "description": "movie data base",
+  "main": "index.js",
+  "scripts": {
+    "watch_tailwind": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillmanncode/my-movie-db.git"
+  },
+  "author": "dillmanncode <dillmanncode1999@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dillmanncode/my-movie-db/issues"
+  },
+  "homepage": "https://github.com/dillmanncode/my-movie-db#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
