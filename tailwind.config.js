@@ -8,6 +8,7 @@ module.exports = {
         'star' : 'url(../../assets/svg/star-icon.svg)',
         'info' : 'url(../../assets/svg/info-icon.svg)',
         'play' : 'url(../../assets/svg/play-icon.svg)',
+        'arrow' : 'url(../../assets/svg/left-arrow.svg)'
       },
       backgroundColor : theme => ({
         ...theme('colors'),
@@ -27,6 +28,8 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
 

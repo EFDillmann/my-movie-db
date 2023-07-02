@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dillmanncode/my-movie-db#readme",
   "devDependencies": {
+    "tailwind-scrollbar": "^3.0.4",
     "tailwindcss": "^3.3.2"
   }
 }
