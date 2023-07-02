@@ -3051,10 +3051,6 @@ video {
   .lg\:justify-center {
     justify-content: center;
   }
-
-  .lg\:place-self-center {
-    place-self: center;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
