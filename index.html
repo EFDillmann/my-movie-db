@@ -26,10 +26,10 @@
                 <li>Popular</li>
                 <li>Upcoming</li>
             </ul>
-            <div id="search" class="hidden md:flex md:items-center md:border md:border-gray-800 md:rounded-lg md:px-4 md:py-2 md:my-2 md:mr-2">
-                <textarea class="resize-none bg-transparent w-40" cols="30" rows="1" placeholder="Search"></textarea>
+            <form id="search" class="hidden md:flex md:items-center md:border md:border-gray-800 md:rounded-lg md:px-4 md:py-2 md:my-2 md:mr-2">
+                <input class="resize-none bg-transparent w-40 h-6" type="text" placeholder="Search"></input>
                 <button class="h-5 w-5"><img src="./assets/svg/search-icon.svg" alt=""></button>
-            </div>
+            </form>
         </nav>
         <!-- <section id="hero">
             <article id="movie-description">
@@ -346,43 +346,45 @@
         </section> -->
         <section id="movie-detail" class="-mt-36 w-full flex flex-col items-center">
                 <article id="movie-description" class="w-full flex flex-col items-center">
-                    <div id="mini" class="h-[800px] w-full mt-14 grid content-end bg-hero bg-cover bg-right-top bg-no-repeat md:relative md:isolate md:after:content-[''] md:after:absolute md:after:-z-10 md:after:inset-0 md:after:bg-myDark md:after:opacity-70 md:grid md:grid-cols-2 md:place-items-center md:place-content-center md:h-screen">
-                        <div class="">
-                            <img class="hidden md:inline-block" src="./assets/images/thordesk-poster.jpg" alt="Dr. Strange poster">
-                        </div>
-                        <div id="content" class="h-full p-2 flex flex-col items-center gap-2 text-center">
-                            <small class="max-w-[400px] w-full font-normal text-lg flex justify-evenly items-center md:justify-start md:space-x-2">
-                                <div class="flex items-center gap-2">
-                                    <span class="h-6 w-6 inline-block bg-star bg-cover bg-center"></span>
-                                    <span>7.5</span>
-                                </div>
-                                <span>
-                                    &#x2022; 
-                                </span>
-                                <span>
-                                    1h 55m
-                                </span>
-                                <span>
-                                    &#x2022; 
-                                </span>
-                                <div id="tag" class="inline-block p-1 mx-1 bg-myRed rounded-lg font-medium text-sm">TRENDING</div>
-                            </small>
-                            <h2 class="max-w-lg font-bold text-2xl">Doctor Strange in the Multiverse of Madness</h2>
-                            <div id="desc" class="flex flex-col items-center gap-1">
-                                <p class="max-w-[640px] font-light text-base leading-7">Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
-                                <button class="h-11 w-44 bg-myRed rounded-lg flex justify-center items-center gap-2"><span class="h-4 w-4 inline-block bg-play bg-cover bg-center"></span> PLAY TRAILER</button>
+                    <div id="mini" class="h-[800px] w-full grid 480px:justify-center 480px:content-end 480px:mt-32 bg-hero bg-cover bg-right-top bg-no-repeat md:relative md:isolate md:after:content-[''] md:after:absolute md:after:-z-10 md:after:inset-0 md:after:bg-myDark md:after:opacity-70 md:h-screen xl:bg-contain">
+                        <div class="w-full grid content-end md:h-screen md:grid md:grid-cols-2 md:grid-rows-1 md:place-items-center md:place-content-center xl:max-w-7xl">
+                            <div class="lg:h-[750px] lg:mt-20">
+                                <img class="hidden md:inline-block lg:h-full" src="./assets/images/thordesk-poster.jpg" alt="Dr. Strange poster">
                             </div>
-                            <div class="max-w-[300px] 480px:max-w-md md:max-w-2xl lg:max-w-4xl lg:justify-center xl:max-w-6xl 2xl:max-w-7xl flex flex-col items-center">
-                                <div id="categories-detail-header" class="max-w-[300px] w-full p-2 grid grid-cols-3 480px:max-w-md md:max-w-2xl lg:max-w-4xl lg:justify-center xl:max-w-6xl 2xl:max-w-7xl">
-                                    <h2 class="w-full grid text-lg font-bold lg:col-start-2 lg:col-end-3 lg:place-content-center">Categories</h2>
+                            <div id="content" class="h-full p-2 grid place-items-center gap-2 text-center md:flex md:flex-col md:justify-center md:items-start md:gap-3 md:text-left lg:mt-96">
+                                <small class="max-w-[400px] w-full font-normal text-lg flex justify-evenly items-center md:justify-start md:space-x-2">
+                                    <div class="flex items-center gap-2">
+                                        <span class="h-6 w-6 inline-block bg-star bg-cover bg-center"></span>
+                                        <span>7.5</span>
+                                    </div>
+                                    <span>
+                                        &#x2022; 
+                                    </span>
+                                    <span>
+                                        1h 55m
+                                    </span>
+                                    <span>
+                                        &#x2022; 
+                                    </span>
+                                    <div id="tag" class="inline-block p-1 mx-1 bg-myRed rounded-lg font-medium text-sm">TRENDING</div>
+                                </small>
+                                <h2 class="max-w-lg font-bold text-2xl">Doctor Strange in the Multiverse of Madness</h2>
+                                <div id="desc" class="flex flex-col items-center gap-1 md:items-start md:gap-2">
+                                    <p class="max-w-[640px] font-light text-base leading-7">Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                    <button class="h-11 w-44 bg-myRed rounded-lg flex justify-center items-center gap-2"><span class="h-4 w-4 inline-block bg-play bg-cover bg-center"></span> PLAY TRAILER</button>
                                 </div>
-                                <article id="categories-list" class="max-w-[300px] rounded-lg w-full mx-2 pb-4 flex overflow-x-auto space-x-2 scrollbar-track-[#262626] scrollbar-thumb-[#E13C2F] scrollbar-thin scrollbar-thumb-rounded-sm scrollbar-track-rounded-sm 480px:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
-                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Action</h4>
-                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Animation</h4>
-                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Crime</h4>
-                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Thriller</h4>
-                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Fiction</h4>
-                                </article>
+                                <div class="max-w-[300px] flex flex-col items-center justify-self-center 480px:max-w-md md:max-w-[320px] md:justify-self-start lg:max-w-[475px] lg:justify-center xl:max-w-[630px] 2xl:max-w-[660px]">
+                                    <div id="categories-detail-header" class="max-w-[300px] w-full p-2 text-left 480px:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+                                        <h2 class="w-full text-lg font-bold">Categories</h2>
+                                    </div>
+                                    <article id="categories-list" class="max-w-[300px] rounded-lg w-full mx-2 pb-4 flex overflow-x-auto space-x-2 scrollbar-track-[#262626] scrollbar-thumb-[#E13C2F] scrollbar-thin scrollbar-thumb-rounded-sm scrollbar-track-rounded-sm 480px:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+                                        <h4 class="bg-myGrey py-2 px-4 rounded-lg">Action</h4>
+                                        <h4 class="bg-myGrey py-2 px-4 rounded-lg">Animation</h4>
+                                        <h4 class="bg-myGrey py-2 px-4 rounded-lg">Crime</h4>
+                                        <h4 class="bg-myGrey py-2 px-4 rounded-lg">Thriller</h4>
+                                        <h4 class="bg-myGrey py-2 px-4 rounded-lg">Fiction</h4>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
