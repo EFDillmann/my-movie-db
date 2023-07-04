@@ -31,7 +31,7 @@
                 <button class="h-5 w-5"><img src="./assets/svg/search-icon.svg" alt=""></button>
             </div>
         </nav>
-        <section id="hero">
+        <!-- <section id="hero">
             <article id="movie-description">
                 <div id="mini" class="h-[320px] w-full bg-hero bg-cover bg-right-top bg-no-repeat 480px:h-screen md:bg-center xl:bg-contain xl:bg-right-top">
                     <div id="content" class="flex flex-col items-center max-h-36 relative top-72 text-center 480px:top-2/3 md:max-h-[354px] md:max-w-[640px] md:items-start md:gap-2 md:text-left md:left-20 xl:left-52">
@@ -60,10 +60,10 @@
                     </div>
                 </div>
             </article>
-        </section>
+        </section> -->
     </header>
     <main class="mt-36 flex flex-col items-center 480px:mt-10 md:mt-0">
-        <!-- <section class="m-5">
+        <!-- <section id="main" class="m-5">
             <div id="header-section" class="flex justify-between items-center mb-6">
                 <h2 class="font-bold text-3xl">Title</h2>
                 <button class="h-7 w-16 p-2 bg-myRed rounded-lg font-semibold text-xs">SEE ALL</button>
@@ -258,7 +258,7 @@
                 </div>
             </article>
         </section> -->
-        <section id="categories">
+        <!-- <section id="categories">
             <div id="categories-header" class="max-w-[300px] w-full mb-4 grid grid-cols-3 480px:max-w-md md:max-w-2xl lg:max-w-4xl lg:justify-center xl:max-w-6xl 2xl:max-w-7xl">
                 <h2 class="w-full grid text-3xl font-bold lg:col-start-2 lg:col-end-3 lg:place-content-center">Categories</h2>
                 <button class="h-10 w-10 col-start-3 justify-self-end rounded-lg bg-myRed flex justify-center items-center"><img src="./assets/svg/left-arrow.svg" alt="Go back"></button>
@@ -311,6 +311,138 @@
                     <h3 class="max-w-[126px] h-6 overflow-hidden">Top Gun: Maverick</h3>
                 </div>
             </article>
+        </section> -->
+        <!-- <section id="popular">
+            <div id="popular-header" class="max-w-[300px] w-full mb-4 grid grid-cols-3 480px:max-w-md md:max-w-2xl lg:max-w-4xl lg:justify-center xl:max-w-6xl 2xl:max-w-7xl">
+                <h2 class="w-full grid text-3xl font-bold lg:col-start-2 lg:col-end-3 lg:place-content-center">Categories</h2>
+                <button class="h-10 w-10 col-start-3 justify-self-end rounded-lg bg-myRed flex justify-center items-center"><img src="./assets/svg/left-arrow.svg" alt="Go back"></button>
+            </div>
+            <article id="popular-movies" class="w-full mt-4 grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+                <div id="poster">
+                    <img src="./assets/images/dr.strange-poster.jpg" alt="">
+                    <h3 class="max-w-[126px] h-6 overflow-hidden">Doctor Strage in the Madness of the Multiverse</h3>
+                </div>
+                <div id="poster">
+                    <img src="./assets/images/jsw-poster.jpg" alt="">
+                    <h3 class="max-w-[126px] h-6 overflow-hidden">Jurassic World:...</h3>
+                </div>
+                <div id="poster">
+                    <img src="./assets/images/thor-poster.jpg" alt="">
+                    <h3 class="max-w-[126px] h-6 overflow-hidden">Thor: Love and Thunder</h3>
+                </div>
+                <div id="poster">
+                    <img src="./assets/images/topgun-poster.jpg" alt="">
+                    <h3 class="max-w-[126px] h-6 overflow-hidden">Top Gun: Maverick</h3>
+                </div>
+                <div id="poster">
+                    <img src="./assets/images/topgun-poster.jpg" alt="">
+                    <h3 class="max-w-[126px] h-6 overflow-hidden">Top Gun: Maverick</h3>
+                </div>
+                <div id="poster">
+                    <img src="./assets/images/topgun-poster.jpg" alt="">
+                    <h3 class="max-w-[126px] h-6 overflow-hidden">Top Gun: Maverick</h3>
+                </div>
+            </article>
+        </section> -->
+        <section id="movie-detail" class="-mt-36 w-full flex flex-col items-center">
+                <article id="movie-description" class="w-full flex flex-col items-center">
+                    <div id="mini" class="h-[800px] w-full grid content-end bg-hero bg-cover bg-right-top bg-no-repeat md:relative md:isolate md:after:content-[''] md:after:absolute md:after:-z-10 md:after:inset-0 md:after:bg-myDark md:after:opacity-70 md:grid md:grid-cols-2 md:place-items-center md:place-content-center md:h-screen">
+                        <div class="">
+                            <img class="hidden md:inline-block" src="./assets/images/thordesk-poster.jpg" alt="Dr. Strange poster">
+                        </div>
+                        <div id="content" class="h-full p-2 flex flex-col items-center gap-2 text-center">
+                            <small class="max-w-[400px] w-full font-normal text-lg flex justify-evenly items-center md:justify-start md:space-x-2">
+                                <div class="flex items-center gap-2">
+                                    <span class="h-6 w-6 inline-block bg-star bg-cover bg-center"></span>
+                                    <span>7.5</span>
+                                </div>
+                                <span>
+                                    &#x2022; 
+                                </span>
+                                <span>
+                                    1h 55m
+                                </span>
+                                <span>
+                                    &#x2022; 
+                                </span>
+                                <div id="tag" class="inline-block p-1 mx-1 bg-myRed rounded-lg font-medium text-sm">TRENDING</div>
+                            </small>
+                            <h2 class="max-w-lg font-bold text-2xl">Doctor Strange in the Multiverse of Madness</h2>
+                            <div id="desc" class="flex flex-col items-center gap-1">
+                                <p class="max-w-[640px] font-light text-base leading-7">Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the Multiverse to confront a mysterious new adversary.</p>
+                                <button class="h-11 w-44 bg-myRed rounded-lg flex justify-center items-center gap-2"><span class="h-4 w-4 inline-block bg-play bg-cover bg-center"></span> PLAY TRAILER</button>
+                            </div>
+                            <div class="max-w-[300px] 480px:max-w-md md:max-w-2xl lg:max-w-4xl lg:justify-center xl:max-w-6xl 2xl:max-w-7xl flex flex-col items-center">
+                                <div id="categories-detail-header" class="max-w-[300px] w-full p-2 grid grid-cols-3 480px:max-w-md md:max-w-2xl lg:max-w-4xl lg:justify-center xl:max-w-6xl 2xl:max-w-7xl">
+                                    <h2 class="w-full grid text-lg font-bold lg:col-start-2 lg:col-end-3 lg:place-content-center">Categories</h2>
+                                </div>
+                                <article id="categories-list" class="max-w-[300px] rounded-lg w-full mx-2 pb-4 flex overflow-x-auto space-x-2 scrollbar-track-[#262626] scrollbar-thumb-[#E13C2F] scrollbar-thin scrollbar-thumb-rounded-sm scrollbar-track-rounded-sm 480px:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Action</h4>
+                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Animation</h4>
+                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Crime</h4>
+                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Thriller</h4>
+                                    <h4 class="bg-myGrey py-2 px-4 rounded-lg">Fiction</h4>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <section class="p-2 mt-4">
+                    <div id="header-section" class="flex justify-between items-center mb-6">
+                        <h2 class="font-bold text-2xl">Title</h2>
+                        <button class="h-7 w-16 p-2 bg-myRed rounded-lg font-semibold text-xs">SEE ALL</button>
+                    </div>
+                    <article class="max-w-[300px] w-full pb-4 flex overflow-x-auto space-x-4 scrollbar-track-[#262626] scrollbar-thumb-[#E13C2F] scrollbar-thin scrollbar-thumb-rounded-sm scrollbar-track-rounded-sm 480px:max-w-md md:max-w-2xl lg:max-w-4xl xl:max-w-6xl 2xl:max-w-7xl">
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/thor-poster.jpg" alt="Thor: Love and Thunder">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Thor: Love and Thunder</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/dr.strange-poster.jpg" alt="Doctor Strange in the Madness of the Multiverse">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Doctor Strange in the Madness of the Multiverse</h3>
+                        </div>
+                        <div id="poster" class="w-full min-w-[126px] text-base font-medium 480px:min-w-[200px]">
+                            <img class="480px:w-[200px] 480px:h-[300px]" src="./assets/images/thor-poster.jpg" alt="Thor: Love and Thunder">
+                            <h3 class="max-w-[126px] max-h-5 overflow-hidden 480px:max-w-[200px]">Thor: Love and Thunder</h3>
+                        </div>
+                    </article>
+                </section>
         </section>
     </main>
     <footer class="mt-6 p-6 border-t border-gray-800 text-center">
